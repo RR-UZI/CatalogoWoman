@@ -1,0 +1,739 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Catálogo de Fragancias</title>
+        <style>
+                    body { font-family: 'Helvetica Neue', Gabriola, sans-serif; background-color: #f8f9fa; padding: 40px; color: #1a1a1a; }
+                    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 30px; max-width: 1200px; margin: 0 auto; }
+
+                    /* Tarjeta Estilo Premium */
+                    .card {
+                        background: #FFD1DC; /
+                        border-radius: 12px;
+                        overflow: hidden;
+                        box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+                        display: flex;
+                        flex-direction: column;
+                    }
+                                            }
+            .contacto-item {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 10px 0;
+                gap: 10px; /* Espacio entre el logo y el texto */
+            }
+
+            .icon-social {
+                width: 24px;  /* Tamaño de los logos */
+                height: 24px;
+            }
+
+            .contacto {
+                margin-top: 50px;
+                padding: 30px;
+                background-color: ##E0F7FA; /* Tu rosa pastel */
+                text-align: center;
+                border-radius: 20px 20px 0 0; /* Bordes redondeados arriba */
+            }
+
+            .contacto h3 {
+                color: #000000;
+                font-family: 'Segoe UI', sans-serif;
+                margin-bottom: 15px;
+            }
+
+            .contacto span {
+                font-size: 1.1rem;
+                color: #555;
+                font-family: Arial, sans-serif;
+            }
+                    /* Contenedor de Imagen */
+                    .image-box {
+                        width: 100%;
+                        height: 320px;
+                        background-color: white;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border-bottom: 1px solid #eee;
+                    }
+
+                    /* Ajuste de la imagen para que no se pixele ni se corte */
+                    .image-box img {
+                        max-width: 90%;
+                        max-height: 90%;
+                        object-fit: contain;
+                    }
+
+                    .info { padding: 20px; flex-grow: 1; }
+                    .brand { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1.5px; color: #888; margin-bottom: 4px; font-weight: 700; }
+                    .name { font-size: 1.1rem; font-weight: 600; margin-bottom: 15px; color: #222; min-height: 2.4em; }
+
+                    .price-row { display: flex; justify-content: space-between; align-items: baseline; border-top: 1px solid #e0e0e0; padding-top: 15px; }
+                    .price {
+                        font-size: 1.2rem;
+                        font-weight: 600;
+                        color: #000;
+                        font-family: 'Arial', serif;
+                        letter-spacing: -1px;
+                    }
+            .currency {
+                        font-size: 0.85rem;
+                        margin-left: 3px;
+                        color: #444;
+                        font-weight: 600;
+                        font-family: 'Helvetica Neue', sans-serif;
+                    }
+                    @media print {
+                        body { background: white; padding: 0; }
+                        .card { break-inside: avoid; box-shadow: none; border: 1px solid #eee; }
+                    }
+        </style>
+    </head>
+    <body>
+        <h1 style="text-align: center; font-weight: 300; margin-bottom: 50px; letter-spacing: 2px">
+            CATALOGO DE FRAGANCIAS PARA MUJER
+        </h1>
+
+        <div class="grid">
+            <div class="card">
+                <div class="image-box">
+                    <img
+                        src="https://cdn11.bigcommerce.com/s-2vt02okold/images/stencil/500x500/products/3277/9172/MVERBC__65815.1770323692.jpg?c=1"
+                        alt="Versace"
+                    />
+                </div>
+                <div class="info">
+                    <div class="brand">Versace</div>
+                    <div class="name">Versace Bright Crystal EDT 90ml Dama</div>
+                    <div class="price-row">
+                        <span class="price">$2,000.00 <span class="currency">MXN</span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="image-box">
+                    <img
+                        src="https://cdn11.bigcommerce.com/s-2vt02okold/images/stencil/500x500/products/3078/4510/MDOLGLB__56013.1731099892.jpg?c=1"
+                        alt="Dolce & Gabbana"
+                    />
+                </div>
+                <div class="info">
+                    <div class="brand">Dolce & Gabbana</div>
+                    <div class="name">Dolce & Gabbana Light Blue EDT 100ml Dama</div>
+                    <div class="price-row">
+                        <span class="price">$2,000.00 <span class="currency">MXN</span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="image-box">
+                    <img
+                        src="https://cdn11.bigcommerce.com/s-2vt02okold/images/stencil/500x500/products/3117/5298/MGODG__64026.1731099896.jpg?c=1"
+                        alt="Carolina Herrera"
+                    />
+                </div>
+                <div class="info">
+                    <div class="brand">Carolina Herrera</div>
+                    <div class="name">Good Girl EDP 80ml Dama</div>
+                    <div class="price-row">
+                        <span class="price">$2,600.00 <span class="currency">MXN</span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="image-box">
+                    <img
+                        src="https://cdn11.bigcommerce.com/s-2vt02okold/images/stencil/500x500/products/3173/8265/MLAVEB2__87117.1746206701.jpg?c=1"
+                        alt="Lancome"
+                    />
+                </div>
+                <div class="info">
+                    <div class="brand">Lancome</div>
+                    <div class="name">La Vie Est Belle EDP 100ml Dama</div>
+                    <div class="price-row">
+                        <span class="price">$2,500.00 <span class="currency">MXN</span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="image-box">
+                    <img
+                        src="https://cdn11.bigcommerce.com/s-2vt02okold/images/stencil/500x500/products/3411/5330/MTOMG__13535.1731099898.jpg?c=1"
+                        alt="Tommy Hilfiger"
+                    />
+                </div>
+                <div class="info">
+                    <div class="brand">Tommy Hilfiger</div>
+                    <div class="name">Tommy Girl EDT 100ml Dama</div>
+                    <div class="price-row">
+                        <span class="price">$900.00 <span class="currency">MXN</span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="image-box">
+                    <img
+                        src="https://cdn11.bigcommerce.com/s-2vt02okold/images/stencil/500x500/products/3125/6893/MGUE__87724.1731099893.jpg?c=1"
+                        alt="Guess"
+                    />
+                </div>
+                <div class="info">
+                    <div class="brand">Guess</div>
+                    <div class="name">Guess EDP 75ml Dama</div>
+                    <div class="price-row">
+                        <span class="price">$500.00 <span class="currency">MXN</span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="image-box">
+                    <img
+                        src="https://cdn11.bigcommerce.com/s-2vt02okold/images/stencil/500x500/products/3433/3835/MMOST2BG__34536.1731099894.jpg?c=1"
+                        alt="Moschino"
+                    />
+                </div>
+                <div class="info">
+                    <div class="brand">Moschino</div>
+                    <div class="name">Moschino Toy 2 Bubble Gum EDT 100ml Dama</div>
+                    <div class="price-row">
+                        <span class="price">$1,100.00 <span class="currency">MXN</span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="image-box">
+                    <img
+                        src="https://cdn11.bigcommerce.com/s-2vt02okold/images/stencil/500x500/products/3040/5282/MCOAF__60203.1731099887.jpg?c=1"
+                        alt="Coach"
+                    />
+                </div>
+                <div class="info">
+                    <div class="brand">Coach</div>
+                    <div class="name">Coach Floral EDP 90ml Dama</div>
+                    <div class="price-row">
+                        <span class="price">$1,300.00 <span class="currency">MXN</span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="image-box">
+                    <img
+                        src="https://cdn11.bigcommerce.com/s-2vt02okold/images/stencil/500x500/products/3512/4066/MBILE__24877.1731099897.jpg?c=1"
+                        alt="Billie Eilish"
+                    />
+                </div>
+                <div class="info">
+                    <div class="brand">Billie Eilish</div>
+                    <div class="name">Billie Eilish EDP 100ml Dama</div>
+                    <div class="price-row">
+                        <span class="price">$1,250.00 <span class="currency">MXN</span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="image-box">
+                    <img
+                        src="https://cdn11.bigcommerce.com/s-2vt02okold/images/stencil/500x500/products/3434/3834/MMOST2__60778.1731099894.jpg?c=1"
+                        alt="Moschino"
+                    />
+                </div>
+                <div class="info">
+                    <div class="brand">Moschino</div>
+                    <div class="name">Moschino Toy 2 EDP 100ml Dama</div>
+                    <div class="price-row">
+                        <span class="price">$1,100.00 <span class="currency">MXN</span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="image-box">
+                    <img
+                        src="https://cdn11.bigcommerce.com/s-2vt02okold/images/stencil/500x500/products/3560/4218/MCOAWR__21466.1731099904.jpg?c=1"
+                        alt="Coach"
+                    />
+                </div>
+                <div class="info">
+                    <div class="brand">Coach</div>
+                    <div class="name">Coach Wild Rose EDP 90ml Dama</div>
+                    <div class="price-row">
+                        <span class="price">$1,400.00 <span class="currency">MXN</span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="image-box">
+                    <img
+                        src="https://cdn11.bigcommerce.com/s-2vt02okold/images/stencil/500x500/products/3152/3037/MILL__39406.1731099891.jpg?c=1"
+                        alt="Moschino"
+                    />
+                </div>
+                <div class="info">
+                    <div class="brand">Moschino</div>
+                    <div class="name">I Love Love EDT 100ml Dama</div>
+                    <div class="price-row">
+                        <span class="price">$750.00 <span class="currency">MXN</span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="image-box">
+                    <img
+                        src="https://cdn11.bigcommerce.com/s-2vt02okold/images/stencil/500x500/products/3094/8124/MEUP__48440.1744046099.jpg?c=1"
+                        alt="Calvin Klein"
+                    />
+                </div>
+                <div class="info">
+                    <div class="brand">Calvin Klein</div>
+                    <div class="name">Euphoria EDP 100ml Dama</div>
+                    <div class="price-row">
+                        <span class="price">$850.00 <span class="currency">MXN</span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="image-box">
+                    <img
+                        src="https://cdn11.bigcommerce.com/s-2vt02okold/images/stencil/500x500/products/3431/6862/MMONBS__00148.1731099901.jpg?c=1"
+                        alt="Montblanc"
+                    />
+                </div>
+                <div class="info">
+                    <div class="brand">Montblanc</div>
+                    <div class="name">Montblanc Signature EDP 90ml Dama</div>
+                    <div class="price-row">
+                        <span class="price">$1,590.00 <span class="currency">MXN</span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="image-box">
+                    <img
+                        src="https://cdn11.bigcommerce.com/s-2vt02okold/images/stencil/500x500/products/3278/3597/MVERBCA__60688.1731099898.jpg?c=1"
+                        alt="Versace"
+                    />
+                </div>
+                <div class="info">
+                    <div class="brand">Versace</div>
+                    <div class="name">Versace Bright Crystal Absolu EDP 90ml Dama</div>
+                    <div class="price-row">
+                        <span class="price">$2,200.00 <span class="currency">MXN</span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="image-box">
+                    <img
+                        src="https://cdn11.bigcommerce.com/s-2vt02okold/images/stencil/500x500/products/3090/6157/METE__32347.1731099891.jpg?c=1"
+                        alt="Calvin Klein"
+                    />
+                </div>
+                <div class="info">
+                    <div class="brand">Calvin Klein</div>
+                    <div class="name">Eternity EDP 100ml Dama</div>
+                    <div class="price-row">
+                        <span class="price">$1,100.00 <span class="currency">MXN</span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="image-box">
+                    <img
+                        src="https://cdn11.bigcommerce.com/s-2vt02okold/images/stencil/500x500/products/4113/7011/MCOAL__47326.1731099909.jpg?c=1"
+                        alt="Coach"
+                    />
+                </div>
+                <div class="info">
+                    <div class="brand">Coach</div>
+                    <div class="name">Coach Love EDP 90ml Dama</div>
+                    <div class="price-row">
+                        <span class="price">$1,600.00 <span class="currency">MXN</span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="image-box">
+                    <img
+                        src="https://cdn11.bigcommerce.com/s-2vt02okold/images/stencil/500x500/products/3677/7796/MGODGB__38606.1739822561.jpg?c=1"
+                        alt="Carolina Herrera"
+                    />
+                </div>
+                <div class="info">
+                    <div class="brand">Carolina Herrera</div>
+                    <div class="name">Good Girl Blush EDP 80ml Dama</div>
+                    <div class="price-row">
+                        <span class="price">$2,790.00 <span class="currency">MXN</span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="image-box">
+                    <img
+                        src="https://cdn11.bigcommerce.com/s-2vt02okold/images/stencil/500x500/products/3305/3567/MGUESR__25387.1731099894.jpg?c=1"
+                        alt="Guess"
+                    />
+                </div>
+                <div class="info">
+                    <div class="brand">Guess</div>
+                    <div class="name">Guess Seductive Red EDT 75ml Dama</div>
+                    <div class="price-row">
+                        <span class="price">$500.00 <span class="currency">MXN</span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="image-box">
+                    <img
+                        src="https://cdn11.bigcommerce.com/s-2vt02okold/images/stencil/500x500/products/3025/5273/MCH__97642.1731099887.jpg?c=1"
+                        alt="Carolina Herrera"
+                    />
+                </div>
+                <div class="info">
+                    <div class="brand">Carolina Herrera</div>
+                    <div class="name">CH EDT 100ml Dama</div>
+                    <div class="price-row">
+                        <span class="price">$2,180.00 <span class="currency">MXN</span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="image-box">
+                    <img
+                        src="https://cdn11.bigcommerce.com/s-2vt02okold/images/stencil/500x500/products/2959/6038/M360__76661.1731099885.jpg?c=1"
+                        alt="Perry Ellis"
+                    />
+                </div>
+                <div class="info">
+                    <div class="brand">Perry Ellis</div>
+                    <div class="name">360 Women EDT 100ml Dama</div>
+                    <div class="price-row">
+                        <span class="price">$610.00 <span class="currency">MXN</span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="image-box">
+                    <img
+                        src="https://cdn11.bigcommerce.com/s-2vt02okold/images/stencil/500x500/products/3037/2950/MCOA2__97344.1731099892.jpg?c=1"
+                        alt="Coach"
+                    />
+                </div>
+                <div class="info">
+                    <div class="brand">Coach</div>
+                    <div class="name">Coach EDP 90ml Dama</div>
+                    <div class="price-row">
+                        <span class="price">$1,370.00 <span class="currency">MXN</span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="image-box">
+                    <img
+                        src="https://cdn11.bigcommerce.com/s-2vt02okold/images/stencil/500x500/products/3126/6459/MGUE1981__97005.1731099893.jpg?c=1"
+                        alt="Guess"
+                    />
+                </div>
+                <div class="info">
+                    <div class="brand">Guess</div>
+                    <div class="name">Guess 1981 EDT 100ml Dama</div>
+                    <div class="price-row">
+                        <span class="price">$525.00 <span class="currency">MXN</span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="image-box">
+                    <img
+                        src="https://cdn11.bigcommerce.com/s-2vt02okold/images/stencil/500x500/products/3437/3831/MMOSF__71703.1731099895.jpg?c=1"
+                        alt="Moschino"
+                    />
+                </div>
+                <div class="info">
+                    <div class="brand">Moschino</div>
+                    <div class="name">Moschino Funny EDT 100ml Dama</div>
+                    <div class="price-row">
+                        <span class="price">$750.00 <span class="currency">MXN</span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="image-box">
+                    <img
+                        src="https://cdn11.bigcommerce.com/s-2vt02okold/images/stencil/500x500/products/2957/8589/M212VR4__33437.1756223543.jpg?c=1"
+                        alt="Carolina Herrera"
+                    />
+                </div>
+                <div class="info">
+                    <div class="brand">Carolina Herrera</div>
+                    <div class="name">212 VIP Rose EDP 125ml Dama</div>
+                    <div class="price-row">
+                        <span class="price">$2,700.00 <span class="currency">MXN</span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="image-box">
+                    <img
+                        src="https://cdn11.bigcommerce.com/s-2vt02okold/images/stencil/500x500/products/3993/5911/MDOLGLBEI__99995.1731099905.jpg?c=1"
+                        alt="Dolce & Gabbana"
+                    />
+                </div>
+                <div class="info">
+                    <div class="brand">Dolce & Gabbana</div>
+                    <div class="name">Dolce Gabbana Light Blue Eau Intense EDP 100ml Dama</div>
+                    <div class="price-row">
+                        <span class="price">$2,050.00 <span class="currency">MXN</span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="image-box">
+                    <img
+                        src="https://cdn11.bigcommerce.com/s-2vt02okold/images/stencil/500x500/products/2956/9145/M212VR__37079.1767837379.jpg?c=1"
+                        alt="Carolina Herrera"
+                    />
+                </div>
+                <div class="info">
+                    <div class="brand">Carolina Herrera</div>
+                    <div class="name">212 VIP Rose EDP 80ml Dama</div>
+                    <div class="price-row">
+                        <span class="price">$2,520.00 <span class="currency">MXN</span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="image-box">
+                    <img
+                        src="https://cdn11.bigcommerce.com/s-2vt02okold/images/stencil/500x500/products/3167/6871/MLACTP__46462.1731099891.jpg?c=1"
+                        alt="Lacoste"
+                    />
+                </div>
+                <div class="info">
+                    <div class="brand">Lacoste</div>
+                    <div class="name">Lacoste Touch of Pink EDT 90ml Dama</div>
+                    <div class="price-row">
+                        <span class="price">$716.00 <span class="currency">MXN</span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="image-box">
+                    <img
+                        src="https://cdn11.bigcommerce.com/s-2vt02okold/images/stencil/500x500/products/3039/5280/MCOADS__53572.1731099886.jpg?c=1"
+                        alt="Coach"
+                    />
+                </div>
+                <div class="info">
+                    <div class="brand">Coach</div>
+                    <div class="name">Coach Dreams Sunset EDP 90ml Dama</div>
+                    <div class="price-row">
+                        <span class="price">$1,485.00 <span class="currency">MXN</span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="image-box">
+                    <img
+                        src="https://cdn11.bigcommerce.com/s-2vt02okold/images/stencil/500x500/products/2966/2888/M360PU__75480.1731099888.jpg?c=1"
+                        alt="Perry Ellis"
+                    />
+                </div>
+                <div class="info">
+                    <div class="brand">Perry Ellis</div>
+                    <div class="name">360 Purple EDP 100ml Dama</div>
+                    <div class="price-row">
+                        <span class="price">$670.00 <span class="currency">MXN</span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="image-box">
+                    <img
+                        src="https://cdn11.bigcommerce.com/s-2vt02okold/images/stencil/500x500/products/3417/3853/MVERE__70285.1731099894.jpg?c=1"
+                        alt="Versace"
+                    />
+                </div>
+                <div class="info">
+                    <div class="brand">Versace</div>
+                    <div class="name">Versace Eros EDP 100ml Dama</div>
+                    <div class="price-row">
+                        <span class="price">$2,225.00 <span class="currency">MXN</span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="image-box">
+                    <img
+                        src="https://cdn11.bigcommerce.com/s-2vt02okold/images/stencil/500x500/products/3541/4161/M212H__20187.1731099903.jpg?c=1"
+                        alt="Carolina Herrera"
+                    />
+                </div>
+                <div class="info">
+                    <div class="brand">Carolina Herrera</div>
+                    <div class="name">212 Heroes EDP 80ml Dama</div>
+                    <div class="price-row">
+                        <span class="price">$2,599.00 <span class="currency">MXN</span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="image-box">
+                    <img
+                        src="https://cdn11.bigcommerce.com/s-2vt02okold/images/stencil/500x500/products/4224/7469/MMOST2PE__30628.1731099914.jpg?c=1"
+                        alt="Moschino"
+                    />
+                </div>
+                <div class="info">
+                    <div class="brand">Moschino</div>
+                    <div class="name">Moschino Toy 2 Pearl EDP 100ml Dama</div>
+                    <div class="price-row">
+                        <span class="price">$1,200.00 <span class="currency">MXN</span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="image-box">
+                    <img
+                        src="https://cdn11.bigcommerce.com/s-2vt02okold/images/stencil/500x500/products/2998/7235/MBEBS__98458.1731099889.jpg?c=1"
+                        alt="Bebe"
+                    />
+                </div>
+                <div class="info">
+                    <div class="brand">Bebe</div>
+                    <div class="name">Bebe Sheer EDP 100ml Dama</div>
+                    <div class="price-row">
+                        <span class="price">$499.00 <span class="currency">MXN</span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="image-box">
+                    <img
+                        src="https://cdn11.bigcommerce.com/s-2vt02okold/images/stencil/500x500/products/3110/4947/MFLOK__06474.1731099893.jpg?c=1"
+                        alt="Kenzo"
+                    />
+                </div>
+                <div class="info">
+                    <div class="brand">Kenzo</div>
+                    <div class="name">Flower by Kenzo EDP 100ml Dama</div>
+                    <div class="price-row">
+                        <span class="price">$1,900.00 <span class="currency">MXN</span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="image-box">
+                    <img
+                        src="https://cdn11.bigcommerce.com/s-2vt02okold/images/stencil/500x500/products/3416/3854/MVERYD__96737.1731099893.jpg?c=1"
+                        alt="Versace"
+                    />
+                </div>
+                <div class="info">
+                    <div class="brand">Versace</div>
+                    <div class="name">Versace Yellow Diamond EDT 90ml Dama</div>
+                    <div class="price-row">
+                        <span class="price">$2,000.00 <span class="currency">MXN</span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="image-box">
+                    <img
+                        src="https://cdn11.bigcommerce.com/s-2vt02okold/images/stencil/500x500/products/2969/6048/M360R__53300.1731099889.jpg?c=1"
+                        alt="Perry Ellis"
+                    />
+                </div>
+                <div class="info">
+                    <div class="brand">Perry Ellis</div>
+                    <div class="name">360 Red EDP 100ml Dama</div>
+                    <div class="price-row">
+                        <span class="price">$570.00 <span class="currency">MXN</span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="image-box">
+                    <img
+                        src="https://cdn11.bigcommerce.com/s-2vt02okold/images/stencil/500x500/products/3231/9269/MSIGM__27153.1770995813.jpg?c=1"
+                        alt="Salvatore Ferragamo"
+                    />
+                </div>
+                <div class="info">
+                    <div class="brand">Salvatore Ferragamo</div>
+                    <div class="name">Signorina Misteriosa EDP 100ml Dama</div>
+                    <div class="price-row">
+                        <span class="price">$999.00 <span class="currency">MXN</span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="image-box">
+                    <img
+                        src="https://cdn11.bigcommerce.com/s-2vt02okold/images/stencil/500x500/products/2951/6916/M212__62646.1731099887.jpg?c=1"
+                        alt="Carolina Herrera"
+                    />
+                </div>
+                <div class="info">
+                    <div class="brand">Carolina Herrera</div>
+                    <div class="name">212 NYC EDT 100ml Dama</div>
+                    <div class="price-row">
+                        <span class="price">$2,200.00 <span class="currency">MXN</span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="image-box">
+                    <img
+                        src="https://cdn11.bigcommerce.com/s-2vt02okold/images/stencil/500x500/products/3549/8564/MGODGV__93062.1755616883.jpg?c=1"
+                        alt="Carolina Herrera"
+                    />
+                </div>
+                <div class="info">
+                    <div class="brand">Carolina Herrera</div>
+                    <div class="name">Very Good Girl EDP 80ml Dama</div>
+                    <div class="price-row">
+                        <span class="price">$2,850.00 <span class="currency">MXN</span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="image-box">
+                    <img
+                        src="https://cdn11.bigcommerce.com/s-2vt02okold/images/stencil/500x500/products/3118/6895/MGODG5__62335.1731099896.jpg?c=1"
+                        alt="Carolina Herrera"
+                    />
+                </div>
+                <div class="info">
+                    <div class="brand">Carolina Herrera</div>
+                    <div class="name">Good Girl EDP 150ml Dama</div>
+                    <div class="price-row">
+                        <span class="price">$3,200.00 <span class="currency">MXN</span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="contacto">
+            <h3>Contacto</h3>
+            <div class="info-container">
+                <div class="contacto-item">
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRw8xY6MFzWBTb5DmqvlnArZF0A2ECjwSt1ag&s"
+                        alt="WhatsApp"
+                        class="icon-social"
+                    />
+                    <span>+52 4771328201</span>
+                </div>
+                <div class="contacto-item">
+                    <img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOAAAADgCAMAAAAt85rTAAAAgVBMVEX///8AAACWlpbn5+c4ODioqKj7+/vT09P5+fnz8/PGxsbi4uLt7e3KyspycnLQ0NBVVVUgICBmZmbBwcG4uLiwsLAWFhYlJSVfX1+goKDb29ujo6OLi4s1NTWzs7MJCQlZWVk/Pz8vLy9ISEh6enpQUFCDg4ORkZEbGxtlZWVvb2+v3b03AAALrElEQVR4nO1dCXOjPAzt5oSE3DdNS8jZ9v//wG23l2QsWyLi2BnefDPfbEMML9iy/CTLDw8NGjRo0KBBgwYNGjRo0KBBgwYN/hv0wvYwjieDxfJ5teq+/6eH1Qeel4vBJI6H7bB8bv3n/fZ0XP8pB+un0+ttGZfELRzt05KImTjd+kHR9Abjsl6bHbPzpEB24S6plN0nZt2CXmNwq5raN9a7XgH8ulXTgkiW2vSGp6o5GZi2VfntquZjwbMevWBeNRkrzlr8omPVVAicdMxpXDUPGptIgd+wahYuKDCsNb/3KfFeRzycVU3Bg/TOOb9u018W27v47at+fAYe7+A3qPrhWci/UAyqXRpxccxN8Fr1ozPRysmvxjO8gZyO96Xq52Yjn1c6qfqxBcj1Cl917p0k6/X65ROzT3z9a71OtCSQPK8wzwg8Xua37oeYOYyELlQvasf90WLZOh/SPLY7h08qneO3u0mks3wJh8vrRnj3HLO9pPnNVV3Mi1ZTyROk4hsITMx8UITI9fDQ3gk8/aG0dfYkf9ZYdFJYdLiPsZM2/cRr901X3MpiyXyLJ2G7vHXupkgd/Qs9prUTGrglp81zMWPPxIT1EoW/NednWxXDJ4uQY1CFg5Dhh/aLYWPF2f84b7IWve0lYrt8F/w9SmZlAi8/r/UMgjCMPtB24uOKMAy8o9nLUKaveR1RSiaIF6v9eDu9nDrHzYzrSq9nm6f0Mj3Mz63liPrlvL1UNB8vPI2NLN8Jl2epB2nHaRfbXujB8zWRNLNyt2WxWIutCrkvHPfZIR54fr6BhKA7XPZqXt7r6se2Dxkr7XE+RLOWe0ibw3mg0zVNjM37tJyXi1ZMY1dL5k/FmKRywvROnK63SFtzyRXG0isoUpvq4nuNXNeKCLosFragQapLyYBhzlw/poigoyHsMfTYC7acwCPLtQwXEXQElXACh+rkYMWI+2AigindDrrObdd0gDyUZ/o6JYJ7eFkB4d+XVr/d7reAdIgCgA4nWYkg8jB83pMcP0YF9A3USekJTESQNB1ojuircvsAcLd+3WFk1uiQpQ5B1EPVLQya9h5//gzn+x75ZR2CsLtEuuwyLsTPQ4xZv6oOQXjRI3VRXhgphL8WEypm5DpAhWAHXqTuoxlr3V8bvQB/JQe+CkE4BNV76MaQNsOX70/OnNuqEIRWwLfqlxM01vHBjx66gX+mUgNVCEJ7JvZiOuP97h2t89YeAUwMVQW8K9h5qZGhQhA+giQCnJ4XeID1u9usCGAs/0b2T6iwkAbBBK6x2bGtpGXVUMOMjGMEot9+P4HZvVTyuAbBJzhKmPQuC/IuD+ENd1YkjEFzCY0bFTbRIHiBD8eil9oERkQRXn0EPSSEQg+c6qllvQZB6NhzkhQShtIVwoTw409nHiJjCXU86sYaBOfgEqc+8vVYPDUdzTf7f900NmQ96G9TE6EGQWgF/NNgl2zeQIgs/0uavphNQQ+Kcrc1CF7BJb4QaSIJr/kyAjYM66ZB8MYn+CIL3nt2nqyhF1cgQSjiufcyHaW5F56tUSURhKPK6amt5bkl7ncIzRWR6qVBEC7YnOELu+syHHR3rd2yb++9zgYhQcLb1iAInRKXXbA4L+Hq8Ovbda62+d+1voQEiRSeEgneMu31s575LjNJuvZowC6fFkcQxhjf7Jf8sSTGta0LjyQTRnUk+cNeTajbGgRhx6K33JmxZNJ8dMwr6UAcHNRE1ow2QXI5uMdNBS5x0ZCZQjJQDH8KQm7WJkg+NxYeQndWn9FNSaEu9t9ZgyBcWFME8SOHvs2V+PIeZWeg30f0HW2CREcx8nFSDz8zIE45NPDOxOgviSAegc5Y/xeQpaGiRxUQJGwZ8lJYyiLeekQYUnhnYoIqhyCKBNGBEgTkFxDCdW0IokUutzYEGrZ2qwTtN9HvyyEIeyhb24fraMIFrAtBFJzhR5/gas8+butCEEXy+PUFoK5rlyPrQhBOam02P5zdZ13P1oUgvEBQnyWBfdTqqNSFIHT6JRU+4GRvXdmXRBB6hFaC8E2kAoKwa1vFHrgSrZBgAj73JeiSD2fVIyFBwtkpg+AMfC6wMXgmtM4TNSEIQ80igt7o0f9OEAY9rMpMTQjCLhpJ8tThIqvOXRTmCfUkhZLgut66paEuBOE0IanUAsWnukwT1hU9nLAlyfjQQbAuJyqY6K0E4XOw9lh+AoX/rF2jLgRhCjkvS+EfUP6I9Yq6EES7FPkb4eEIs08vdSF4hH2NncwGZxci7bwuBJG1YE8USPy1L0JqQxA9q2MPAMQLfO1BJsMiQ7BAVc1PEIucvGoDqMwkEUIriSBD2UY6NWtfBS6MRgQe6kMQZwwyhDWUwUhKjRVI91R0CedX+N0ZHASlMhFqRNCIf9KR7k/gnbekc1BB+IyM8BopMu4Ak5FtQaaSlBQAZYWwzZoLjgyfjZFPQxulCkLYtCpo7vfuUxP+1dwuT2fKDP1XaaeR0OZjnSntYq2wnt1H7pCKS0ojYSYCZQuDhF1TRHzLZlu6Zs2SEoEgQVdqma22S7zbfnfV9Ly01O/puYTUklK5oLLgjG7ayy4E0TDux1RNOedmPfgd4ofQTqd0pz/Kiz25QxmQICHXlZsQK64X5HF5SkqIFaQ0y4qD+EJRZaU0S5LSJcUzQt9WxLKS0mEIwS9IjLmlzvreepQw9k/lClWwMYRZV46xTw/uKaKCHlVs7flz9u99mXCUG/jLUntctTdneQt3fd3WTTHmbVX3Rp+UCB4ZxsxEsqe3iIy40ik035SUpbIDlJHdb8F0ZdlG0Ytv/Fq30IWiZBD1La6+tTpCul+AFU8w6c5Fx5BAt4FyCVQIwtk7x0E3T9v5/HVqVz6dgD2HCsupEISTd4l1uJ/gsxW6zRxaMzpFXh3QxpCxfxWCKExSfLmjb0CHgXQwdIp1wMHADD3cjzV8NHKhrUMQrumZU/39QFIrGfrXIYiU+eJK4mFASY2OG+sQRBHOko4sQtmk9LhQKlqFFgjlvEKkDtPOnRJBlLQsyDPIDzQCHQliWpXxkBotSBXJC1Q/w+U+aRHEmmfxx2YiP92lnWoVbzzigELRRxNiUcDVY9TKbxoFOESLCjEM0cMlfosIut5LYsSECjydKTH2wDq1WBFBp/03YrjFuWxTQ+5wu/eiYvdu22HuLY6UDvjByBajcY8GdvGTD7izI7KHjTG1IwFmu4yq6pmTRKe6enrdOPuNdkvzqMI3Sy0Fn2PoKa6E4TuXz9rfo+erQsXf5NCynlnuDB9+QHR8gteNJo9qbvdHy8fW/vw2324Pl9MpTdNOp/MEcfz6//vfO2l6ulwO29f5+LpvdReTmJT7vZUURQVQ/JtTHcXELM0REDThLUZrVkb0wC9Zqh+37ULPrxBPZS0yrKLILN+HkGHAhOe7cZxotbOofYg5ErjwiB3W8aanok+V+gRvL7AwZs7cQS0+kEuOIbMQrbRd5rTdEVlTOULuKYEHacvs8qhpgRQj/iGI4lOuBAdIzuz1Q+9FbyFZTMvrnIlO+U53+Y8ztiJcjEVBqIP8FuLo2Lw1Gt57ePo7gna8uqbSm+dwO3JVmV53LvN3n3K5/HfSafvjUKwwCEzP7OufwcfhWmHUbg/jyWixXK521/P0lOuAHFNlYKEsYV4DuQ6LFm3CrRj5hsb/8wpznvatXuu9KGRzqJlQP46gIORfuaVVPzoLWz8RCiUFAO+DWSJfBM8xfbWASE3LoP6WNFvMVAbRkdsVwCLRylDw4W334uJn8F8zPNzP752hpiavizsmCISio7h5cfU/OhM5MidLgOZZ3P1ijjG9B6muTtIrMFCdC/dOf1nERR5mKsWhEMl5UBeKB/neNib6dbCnY2UBDyNaVeu7bZ8VhDsPwsW+6LNp7Uhvg+LZfSNePF5fL+kxxxYBIV6Op8v82h0Uop57EYRRFLWLw3vrYR7Js0GDBg0aNGjQoEGDBg0aNGjQoEGDBnfhL/5x1HOBW39jAAAAAElFTkSuQmCC"
+                        alt="Instagram"
+                        class="icon-social"
+                    />
+                    <span>@fragance_au</span>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
